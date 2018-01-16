@@ -25,7 +25,7 @@ def sms_reply():
     messagecount = int(cookie.split("%")[1])
     messagecount +=1
     cookie_id = cookie.split("%")[0]
-    cookie_new = cookie_id +"%" + str(messagecount) #'SMe85bdd60793fa0711b2940c2dd7ef24a', 'SMe85bdd60793fa0711b2940c2dd7ef24a'
+    cookie_new = cookie_id +"%" + str(messagecount)
 
     message_id = shortuuid.uuid()
     time_now=time.time()

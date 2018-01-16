@@ -3,11 +3,11 @@
 from twilio.rest import Client
 
 # Find these values at https://twilio.com/user/account
-account_sid = "ACa561bc741453b2b5a94a91e3ba5c3237"
-auth_token = "50f13d34604ddb1ec442b48292938e7c"
+account_sid = ""
+auth_token = ""
 client = Client(account_sid, auth_token)
 
-from_ = "+441412807832"
+from_ = ""
 
 def send_sms(message,to):
 
@@ -16,5 +16,5 @@ def send_sms(message,to):
 if __name__ == '__main__':
 
     message="hello"
-    to = "+447892882181"
+    to = ""
     send_sms(message, to)
